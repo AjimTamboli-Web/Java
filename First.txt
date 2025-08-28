@@ -1,0 +1,21 @@
+This is the First file for create Git hub repo steps: 
+
+GitHub is a popular platform where developers store, share, and collaborate on code. It is built around Git, which is a version control system created by Linus Torvalds (the creator of Linux).
+GitHub → A website where you can upload your Git projects so that you (and others) can access them online, collaborate, and contribute.
+
+1) git init -->     for initiate local folder empty repo to connect git hub repository. Use once on folder to create.
+2) git status -->   use for check untrack files which does not push yet.(also show unpushed files)
+3) git add "File name".txt -->   single file for use push or add. Moves files into Git’s staging area.
+   OR  add everything:  git add .   
+4) git commit -m "First commit" --> The message("First commit") describes what you changed. Action name or Process name.
+5) git commit -M main  --> when you create a new repo and want to push to GitHub, you may need to rename your branch.Renames your branch to main so it            			   matches GitHub’s default branch, Without this, GitHub may reject your push if it expects main.
+6) git remote add origin https://github.com/username/reponame.git --> Tells Git where your online repository is (on GitHub). origin is just a nickname for       	                                                               that GitHub URL. Links your local project to the empty repo you created on GitHub.
+7) git push -u origin main --> Uploads your local snapshot (commits) to GitHub → now your project is online. -u sets origin main as the default so next      				time you can just use git push. Now your project lives online, and anyone (with permission) can see or collaborate.
+
+
+**  When you make more changes later:
+1) Save your changes in files.
+2) Run:   git add .
+          git commit -m "your message here"
+          git push
+   This updates GitHub with your new snapshot.Each time, you’re saving a new snapshot and sending it to GitHub.
